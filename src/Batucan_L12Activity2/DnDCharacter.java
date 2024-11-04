@@ -10,6 +10,17 @@ public abstract class DnDCharacter implements Abilities {
 
 	public abstract void receiveDamage(int damage);
 	/*
+	 * Initializes the value of the fields
+	 * @param characterName holds String value
+	 * @param health holds int value
+	 * @param damage holds int value
+	 */
+	DnDCharacter(String characterName, int health, int damage){
+		this.characterName = characterName;
+		this.health = health;
+		this.damage = damage;
+	}
+	/*
 	 * Return character, character name, health and damage as string
 	 * 
 	 * @param character holds string value
