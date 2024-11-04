@@ -10,6 +10,7 @@ public class StudentPoll {
 	/*
 	 * Asks the user for an input from 1 to 10 Stores the input numbers to
 	 * numbers.txt Reads the file to the very end and output it in output.txt
+	 * @param args holds string value
 	 * 
 	 * @return no return value
 	 */
@@ -30,7 +31,7 @@ public class StudentPoll {
 				int answer = scanner.nextInt();
 				if (answer >= 1 && answer <= 10) {
 					formatter1.format("%d\n", answer);
-					formatter1.flush();
+//					formatter1.flush();
 				} else {
 					System.out.println("\n[ Exiting the survey... ]");
 					isValid = false;
@@ -40,7 +41,7 @@ public class StudentPoll {
 
 			while (sc.hasNext()) {
 				formatter2.format("%d\n", sc.nextInt());
-				formatter2.flush();
+//				formatter2.flush();
 			}
 			formatter2.close();
 			sc.close();
