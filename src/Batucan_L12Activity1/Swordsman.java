@@ -7,10 +7,8 @@ public class Swordsman extends DnDCharacter {
 	 * 
 	 * @param characterName holds String value
 	 */ 
-	Swordsman(String characterName){
-		this.characterName = characterName;
-		this.health = 100;
-		this.damage = 25;
+	Swordsman(String characterName) {
+		super(characterName, 100, 25);
 	}
 	/*
 	 * Displays character name and buff damage and attack

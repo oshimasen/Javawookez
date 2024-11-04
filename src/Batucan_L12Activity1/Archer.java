@@ -7,10 +7,8 @@ public class Archer extends DnDCharacter {
 	 * 
 	 * @param characterName holds String value
 	 */ 
-	Archer(String characterName){
-		this.characterName = characterName;
-		this.health = 100;
-		this.damage = 20;
+	Archer(String characterName) {
+		super(characterName, 100, 20);
 	}
 	/*
 	 * Displays character name and buff damage and attack
