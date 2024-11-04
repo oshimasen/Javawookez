@@ -8,9 +8,7 @@ public class Catalyst extends DnDCharacter {
 	 * @param characterName holds String value
 	 */ 
 	Catalyst(String characterName) {
-		this.characterName = characterName;
-		this.health = 100;
-		this.damage = 15;
+		super(characterName, 100, 15);
 	}
 	/*
 	 * Displays character name and buff damage and attack
